@@ -39,7 +39,7 @@
                     link__hover-effect--black">
                     Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -61,7 +61,7 @@
                 <h1 class="title blue">I am Valance.</h1>
                 <p class="header__para">I'm a tech-savvy guy who wants to break into the tech industry to make a change.
                     I'm currently learning to be a <br><b class="blue">Frontend Software Engineer </b> and studying to be a <b class="blue">Cybersecurity Specialist.</b>
-                <br>Here's a little more <b class="blue">about me</b>.</p>
+                <br>Here's a little more <b class="blue click" onclick="toggleModal()">about me</b>.</p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/valance-taylor-b2a49a243/" target="_blank" class="social__link click">
                         <i class="fa-brands fa-linkedin"></i>
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
             </button>
             <a href="#projects" class="scroll">
@@ -124,6 +124,7 @@
                     </div>
                 </div>
                 <div class="modal__half modal__contact">
+                    <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
                     <h3 class="modal__title modal__title--contact">
                         Let's have a chat!
                     </h3>
@@ -133,15 +134,15 @@
                     <form id="contact__form" onsubmit="contact(event)">
                         <div class="form__item">
                             <label class="form__item--label">Name</label>
-                            <input class="input" name="user_name" type="text" required></input>
+                            <input class="input" name="user_name" type="text" ></input>
                         </div>
                         <div class="form__item">
                             <label class="form__item--label">Email</label>
-                            <input class="input" name="user_email" type="text" required></input>
+                            <input class="input" name="user_email" type="text" ></input>
                         </div>
                         <div class="form__item">
                             <label class="form__item--label">Message</label>
-                            <textarea class="input" name="message" type="text" required></textarea>
+                            <textarea class="input" name="message" type="text" ></textarea>
                         </div>
                         <button id="contact__submit" class="form__submit">
                             Kindly forward it here.
@@ -154,7 +155,6 @@
                         Thanks for the message. Will get back to you very soon.
                     </div>
                 </div>
-                <i class="fas fa-times modal__exit click"></i>
             </div>
     </section>
     <section id="projects">
