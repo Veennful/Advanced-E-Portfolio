@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e66f7af712.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <title>Valance Taylor</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "v0--psBoSqo8SYu0F",
+      });
+   })();
+</script>
+</head>
+<body>
+    <section id="landing-page">
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/1304_TLNC_Gaming-Premium_Bundle-Rev-1-01.2.png" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black">
+                    About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black">
+                    Projects</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black">
+                    Contact</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black">
+                    <i class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hello!</h1>
+                <h1 class="title blue">I am Valance.</h1>
+                <p class="header__para">I'm a tech-savvy guy who wants to break into the tech industry to make a change.
+                    I'm currently learning to be a <br><b class="blue">Frontend Software Engineer </b> and studying to be a <b class="blue">Cybersecurity Specialist.</b>
+                <br>Here's a little more <b class="blue">about me</b>.</p>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/valance-taylor-b2a49a243/" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Veennful" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="./assets/Valance-Taylor (4).pdf" target="_blank" class="social__link click">
+                        <i class="fa-regular fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <button class="mail__btn click">
+            <i class="fa-solid fa-envelope"></i>
+            </button>
+            <a href="#projects" class="scroll">
+                <div class="scroll__icon click"></div>
+            </a>
+            <div class="modal">
+                <div class="modal__half modal__about">
+                    <h3 class="modal__title modal__sub-title--about">Here's a bit about me</h3>
+                    <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+                    <p class="modal__para">I'm a 24 year old African American <b class="blue">Frontend Software Engineer</b>.
+                        <br>I'm currently learning every <b class="blue">coding language</b> in code to grow my <b class="blue">techincal background</b> & studying for my <b class="blue">Cybersecurity Specialist degree</b>.
+                    </p>
+                    <div class="modal__languages">
+                        <figure class="modal__language">
+                            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                            <span class="language__name">HTML</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="">
+                            <span class="language__name">CSS</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="">
+                            <span class="language__name">JavaScript</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="">
+                            <span class="language__name">TypeScript</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="">
+                            <span class="language__name">React</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="">
+                            <span class="language__name">Vue</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="">
+                            <span class="language__name">C++</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="">
+                            <span class="language__name">Python</span>
+                        </figure>
+                    </div>
+                </div>
+                <div class="modal__half modal__contact">
+                    <h3 class="modal__title modal__title--contact">
+                        Let's have a chat!
+                    </h3>
+                    <h4 class="modal__sub-title modal__sub-title--contact">
+                        I'm currently open for new technical opportunities.
+                    </h4>
+                    <form id="contact__form" onsubmit="contact(event)">
+                        <div class="form__item">
+                            <label class="form__item--label">Name</label>
+                            <input class="input" name="user_name" type="text" required></input>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__item--label">Email</label>
+                            <input class="input" name="user_email" type="text" required></input>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__item--label">Message</label>
+                            <textarea class="input" name="message" type="text" required></textarea>
+                        </div>
+                        <button id="contact__submit" class="form__submit">
+                            Kindly forward it here.
+                        </button>
+                    </form>
+                    <div class="modal__overlay modal__overlay--loading">
+                        <i class="fas fa-spinner"></i>
+                    </div>
+                    <div class="modal__overlay modal__overlay--success">
+                        Thanks for the message. Will get back to you very soon.
+                    </div>
+                </div>
+                <i class="fas fa-times modal__exit click"></i>
+            </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="blue">Projects</span>
+                    <ul class="project__list">
+                        <li class="project">
+                            <div class="project__wrapper">
+                                <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                                <div class="project__wrapper--bg"></div>
+                                <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        TGE Personal Website
+                                    </h3>
+                                    <h4 class="project__description--sub-title">
+                                        HTML, CSS, JavaScript
+                                    </h4>
+                                    <p class="project__description--para">
+                                        Paragraph Pending
+                                    </p>
+                                    <div class="project__description--link">
+                                        <a href="https://github.com/Veennful" target="_blank" class="project__description--link">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+            <figure>
+                <img class="footer__logo--img" src="./assets/1304_TLNC_Gaming-Premium_Bundle-Rev-1-01.2.png" alt="">
+            </figure>
+            <div class="footer__social--list">
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">
+                Github
+            </a>
+            <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">
+                LinkedIn
+            </a>
+            <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">
+                Contact
+            </a>
+            <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white">
+                Resume
+            </a>
+            </div>
+            <div class="footer__copyright">
+                Copyright &copy; Made by Valance Niambi Taylor "Veennful"
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
